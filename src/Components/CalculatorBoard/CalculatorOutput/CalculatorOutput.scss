@@ -1,0 +1,17 @@
+.CalculatorOutput {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 20%;
+  padding: 0px 15px;
+  background-color: #343434;
+  color: #fff;
+  font-size: 40px;
+  position: relative;
+  .CalculatorOutput__initial {
+    position: absolute;
+    top: 0px;
+    right: 3px;
+    font-size: 20px;
+  }
+}

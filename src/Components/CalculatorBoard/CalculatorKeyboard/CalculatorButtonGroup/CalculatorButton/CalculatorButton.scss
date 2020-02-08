@@ -1,0 +1,27 @@
+.CalculatorButton {
+  width: 25%;
+  flex-grow: 1;
+  background-color: #96dcda;
+  border: 1px white solid;
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  background-position: center;
+  transition: background 0.6s;
+  cursor: pointer;
+  &.large {
+    width: 50%;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background: #70c3c1 radial-gradient(circle, transparent 1%, #bfe9e8 1%)
+      center/15000%;
+    &:active {
+      background-color: #bfe9e8;
+      background-size: 100%;
+      transition: background 0s;
+    }
+  }
+}
