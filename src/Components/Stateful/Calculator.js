@@ -38,10 +38,11 @@ class Calculator {
       this.clear();
       return;
     }
+
     const first = this.values.length > 0 ? this.values[0] : null;
     const last =
       this.values.length > 0 ? this.values[this.values.length - 1 || 0] : null;
-    if (Object.is(first, last) || !this.operator) {
+    if (first && (Object.is(first, last) || !this.operator)) {
       const split = this.values[0].split("");
       split.pop();
       this.values[0] = split.join("");

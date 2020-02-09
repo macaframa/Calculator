@@ -28,6 +28,7 @@ const keys = [
   ],
   [
     { value: ".", type: "number" },
+    //TODO: change type for 0
     { value: "0", type: "operator" },
     { value: "=", size: "large", type: "sum" }
   ]
